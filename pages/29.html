@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urban Priority Triage - RenovationMap is an interactive map tool for identifying buildings for energy efficiency renovations.">
+    <link rel="canonical" href="29_app.html">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Urban Priority Triage - RenovationMap</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .image-section {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+        .text-section {
+            padding: 2rem;
+            line-height: 1.8;
+            color: hsl(224, 56%, 12%);
+            font-size: 1rem;
+        }
+        .text-section p {
+            margin-bottom: 1rem;
+        }
+        .text-section p:last-child {
+            margin-bottom: 0;
+        }
+        .redirect-notice {
+            text-align: center;
+            margin-top: 2rem;
+            color: hsl(224, 89%, 60%);
+            font-weight: 600;
+        }
+        @media screen and (min-width: 768px) {
+            .container {
+                padding: 2rem 0;
+            }
+            .text-section {
+                font-size: 1.1rem;
+                padding: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <p>The Urban Priority Triage (RenovationMap) is an interactive data visualization platform designed to help municipal authorities, urban planners, and sustainability consultants identify and prioritize buildings for energy efficiency renovations.</p>
+            <p>By integrating infrared analysis, building age, occupancy, and climate exposure indices, the application maps spatial patterns of thermal inefficiency and highlights areas with the highest potential for energy saving and carbon reduction.</p>
+            <p>The platform acts as a decision-support tool, optimizing the allocation of public subsidies and private investments to accelerate the transition toward carbon-neutral cities.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/ds15.jpg" alt="redirect now!" title="do not wait, redirect now to app - Urban Priority Triage - RenovationMap" onclick="window.location.href='29_app.html';">
+        </div>
+        <div class="redirect-notice" id="notice">
+            <p>Click the image above to open the application in full screen.</p>
+        </div>
+    </div>
+
+    <script>
+        // the app is loaded on click
+    </script>
+</body>
+</html>
