@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analysis of the Spanish festival industry — geographic distribution, economic impact, and category breakdown of 4,500+ annual festivals across Spain.">
+    <link rel="canonical" href="30_app.html">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Spanish Festival Industry Analysis</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .image-section {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+        .text-section {
+            padding: 2rem;
+            line-height: 1.8;
+            color: hsl(224, 56%, 12%);
+            font-size: 1rem;
+        }
+        .text-section p {
+            margin-bottom: 1rem;
+        }
+        .text-section p:last-child {
+            margin-bottom: 0;
+        }
+        .redirect-notice {
+            text-align: center;
+            margin-top: 2rem;
+            color: hsl(224, 89%, 60%);
+            font-weight: 600;
+        }
+        @media screen and (min-width: 768px) {
+            .container {
+                padding: 2rem 0;
+            }
+            .text-section {
+                font-size: 1.1rem;
+                padding: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <p>The Spanish Festival Industry Analysis is an interactive dashboard mapping over 4,500 annual festivals across Spain's 17 autonomous communities, spanning music, gastronomy, cultural heritage, cinema, and religious traditions. Each event is geo-referenced and enriched with attendance data, economic footprint estimates, and historical series dating back to 2010.</p>
+            <p>Regional heatmaps reveal concentration patterns across provinces, while category filters expose how festival typology correlates with tourism flows, seasonal demand peaks, and local GDP contribution. Key indicators — total attendees, average event duration, and infrastructure spend — are surfaced as headline KPIs alongside trend lines for the post-pandemic recovery period.</p>
+            <p>The tool is designed for cultural policy analysts, regional tourism boards, and event-industry investors who need a data-driven overview of Spain's festival ecosystem, its growth trajectory, and the untapped potential of underserved inland provinces.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/an4.jpg" alt="redirect now!" title="do not wait, redirect now to app - analysis of the Spanish festival industry" onclick="window.location.href='30_app.html';">
+        </div>
+        <div class="redirect-notice" id="notice">
+            <p>Click the image above to open the application in full screen.</p>
+        </div>
+    </div>
+
+    <script>
+        // the app is loaded on click
+    </script>
+</body>
+</html>
