@@ -49,6 +49,24 @@ In the `pages/` directory, create a new file `XX.html` (where `XX` is the next s
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- GTM --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+    new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+    "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,"script","dataLayer","GTM-538VHG6H");</script>
+    <!-- GA4 [RDT-REBG-38] --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2E348VSQ5G"></script>
+    <script>
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js",new Date());
+    gtag("config","G-2E348VSQ5G",{
+      custom_map:{"dimension1":"project_name","dimension2":"page_module","dimension3":"user_type","dimension4":"stream_id"},
+      project_name:"realdatalab-github-pages",
+      stream_id:"RDT-REBG-38",
+      page_module:document.title.split("—")[0].trim()||"unknown",
+      user_type:(location.search.includes("mode=client")?"client":"ops")
+    });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="[Short description of the project for search engine snippet]">
@@ -71,6 +89,7 @@ In the `pages/` directory, create a new file `XX.html` (where `XX` is the next s
     </style>
 </head>
 <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-538VHG6H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="text-section">
             <p>[First paragraph of detailed project description...]</p>
@@ -94,6 +113,24 @@ In the `pages/` directory, create `XX_app.html` (e.g., `30_app.html`) to display
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- GTM --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+    new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+    "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,"script","dataLayer","GTM-538VHG6H");</script>
+    <!-- GA4 [RDT-REBG-38] --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2E348VSQ5G"></script>
+    <script>
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js",new Date());
+    gtag("config","G-2E348VSQ5G",{
+      custom_map:{"dimension1":"project_name","dimension2":"page_module","dimension3":"user_type","dimension4":"stream_id"},
+      project_name:"realdatalab-github-pages",
+      stream_id:"RDT-REBG-38",
+      page_module:document.title.split("—")[0].trim()||"unknown",
+      user_type:(location.search.includes("mode=client")?"client":"ops")
+    });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[Project Name] App</title>
@@ -103,6 +140,7 @@ In the `pages/` directory, create `XX_app.html` (e.g., `30_app.html`) to display
     </style>
 </head>
 <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-538VHG6H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <iframe src="[APP_URL]" title="[Project Name] App" allowfullscreen></iframe>
 </body>
 </html>
