@@ -91,11 +91,22 @@
         </div>
         <div class="redirect-notice" id="notice">
             <p>Click the image above to open the application in full screen.</p>
+            <p style="font-size: 0.85rem; color: #777; margin-top: 0.5rem;">(You will be redirected automatically in 30 seconds)</p>
         </div>
     </div>
 
     <script>
         // the app is loaded on click
+        setTimeout(function() {
+            var canonical = document.querySelector('link[rel="canonical"]');
+            if (canonical && canonical.href) {
+                window.location.href = canonical.href;
+            } else {
+                var filename = window.location.pathname.split('/').pop();
+                var num = filename.split('.')[0];
+                window.location.href = num + '_app.html';
+            }
+        }, 30000);
     </script>
 </body>
 </html>
