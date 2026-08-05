@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- GTM --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+    new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+    "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,"script","dataLayer","GTM-538VHG6H");</script>
+    <!-- GA4 [RDT-REBG-38] --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2E348VSQ5G"></script>
+    <script>
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js",new Date());
+    gtag("config","G-2E348VSQ5G",{
+      custom_map:{"dimension1":"project_name","dimension2":"page_module","dimension3":"user_type","dimension4":"stream_id"},
+      project_name:"realdatalab-github-pages",
+      stream_id:"RDT-REBG-38",
+      page_module:document.title.split("—")[0].trim()||"unknown",
+      user_type:(location.search.includes("mode=client")?"client":"ops")
+    });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printed Construction App</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-538VHG6H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <iframe src="https://3dprintconst.vercel.app/" title="3D Printed Construction App" allowfullscreen></iframe>
+</body>
+</html>
